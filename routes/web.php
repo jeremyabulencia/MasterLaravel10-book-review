@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix' => '/doc'], function ($route) {
+    $route->get('/aggregations', function() {
+        return view('aggregationSample');
+    });
+});
+
