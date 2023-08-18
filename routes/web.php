@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,4 +23,6 @@ Route::group(['prefix' => '/doc'], function ($route) {
         return view('aggregationSample');
     });
 });
+
+Route::resource('books', BookController::class);
 

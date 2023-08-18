@@ -2,6 +2,18 @@
 
 @section('title', 'Laravel Aggregation Documentation')
 
+<style type="text/tailwindcss">
+    p {
+        @apply block px-4 py-3
+    }
+    .descriptionTxt {
+        @apply block text-slate-700 text-sm px-2 py-3
+    }
+    .commandTxt {
+        @apply block border border-gray-400 bg-gray-200 text-sm px-2 py-3
+    }
+</style>
+
 @section('content')
     <div>
     <p>
