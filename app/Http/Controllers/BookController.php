@@ -58,6 +58,8 @@ class BookController extends Controller
                 'book'   => $book->load([
                     'reviews'   => fn($query)   => $query->latest()
                 ])
+                    ->loadCount('reviews')
+                    ->loadAvg('reviews','rating')
             ]
         );
     }
