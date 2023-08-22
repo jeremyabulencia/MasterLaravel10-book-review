@@ -57,4 +57,10 @@
             </li>
         @endforelse
     </ul>
+
+    <div>
+        <nav>
+            {{ $books->links() }}
+        </nav>
+    </div>
 @endsection
